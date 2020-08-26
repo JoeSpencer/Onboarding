@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'WT Gothic';
+	src: url('WTGothic-Regular.woff2') format('woff2'),
+		 url('WTGothic-Regular.woff') format('woff');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'WT Gothic';
+	src: url('WTGothic-Medium.woff2') format('woff2'),
+		 url('WTGothic-Medium.woff') format('woff');
+
+    font-weight: 400;
+    font-style: medium;
+}
