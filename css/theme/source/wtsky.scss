@@ -1,0 +1,54 @@
+/**
+ * wtsky theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+// @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(fonts/WTGothic/wtgothic.css);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: WT Gothic, 'sans-serif';
+$mainFontSize: 28px;
+$headingFont: WT Gothic, 'sans-serif';
+$headingFontWeight: 400;
+$headingTextTransform: none;
+$mainColor: rgb(255, 255, 255);
+$headingColor: rgb(255, 255, 255);
+$headingLetterSpacing: 0em;
+$headingTextShadow: none;
+$backgroundColor: #0A47ED;
+$linkColor: #3b759e;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+// Fix links so they are not cut off
+.reveal a {
+	line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgb(19, 75, 228), #0A47ED );
+}
+
+body:after {
+    content: url(../theme/img/WT_Logo_White_Negative_RGB.png);
+	position: fixed;
+	top: 1em;
+	left: 1em;	
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
