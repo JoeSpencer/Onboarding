@@ -36,8 +36,8 @@ body:after {
   --heading3-size: 1.55em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #3b759e;
-  --link-color-hover: #74a7cb;
+  --link-color: #ffffff;
+  --link-color-hover: white;
   --selection-background-color: #134674;
   --selection-color: #fff; }
 
@@ -249,18 +249,18 @@ body:after {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #3b759e;
+  color: #ffffff;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #74a7cb;
+  color: white;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #264c66; }
+  background: #d9d9d9; }
 
 /*********************************************
  * Frame helper
@@ -273,21 +273,21 @@ body:after {
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #3b759e;
+  border-color: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #3b759e; }
+  color: #ffffff; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #3b759e; }
+  color: #ffffff; }
 
 /*********************************************
  * PRINT BACKGROUND
