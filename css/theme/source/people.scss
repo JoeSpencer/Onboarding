@@ -1,0 +1,155 @@
+$section-space: 10px;
+$black: #000000;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin mobile {
+   @media (max-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin tablet {
+   @media (max-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+.people-section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &.container-full {
+    padding: 0 $section-space;
+  }
+
+  .people-content {
+    width: 100%;
+  }
+
+  .people {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    .person {
+      display: flex;
+      align-items: center;
+      width: 49%;
+      margin: 0 0 1.75rem 0;
+      color: $black;
+
+      .person-img {
+        background-color: rgba(255, 255, 255, 0.2);
+        position: relative;
+        width: 9rem;
+        height: 9rem;
+        display: block;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 0 1rem;
+        height: 100%;
+
+        .person-detail {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          text-align: left;
+        }
+
+        h3 {
+          font-weight: normal;
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+          letter-spacing: 0.5px;
+          margin: 0 0 0.3rem 0;
+        }
+
+        h4 {
+          margin: 0;
+          font-size: 1.12rem;
+          font-weight: normal;
+
+          &.office {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .people-section {
+    &.container-full {
+      padding: 0 2rem;
+
+      .people .person .info h4.office {
+        letter-spacing: 0;
+        padding-top: 0.5rem;
+      }
+    }
+
+    .people {
+      width: 100%;
+      flex-direction: column;
+
+      .person {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 3rem 0;
+        align-items: flex-start;
+
+        .person-img {
+          height: 5.75rem;
+          width: 5.75rem;
+        }
+
+        .info {
+          margin: 0 0 0 0.8rem;
+
+          h3 {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+          }
+
+          h4 {
+            font-size: 0.8rem;
+            line-height: 1rem;
+          }
+        }
+
+        &:hover {
+          background-color: none !important;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .buttons.inline {
+      margin: 3rem auto;
+    }
+  }
+}

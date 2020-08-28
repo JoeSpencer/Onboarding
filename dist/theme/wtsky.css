@@ -4,6 +4,89 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @import url(fonts/WTGothic/wtgothic.css);
+.people-section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .people-section.container-full {
+    padding: 0 10px; }
+  .people-section .people-content {
+    width: 100%; }
+  .people-section .people {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; }
+    .people-section .people .person {
+      display: flex;
+      align-items: center;
+      width: 49%;
+      margin: 0 0 1.75rem 0;
+      color: #000000; }
+      .people-section .people .person .person-img {
+        background-color: rgba(255, 255, 255, 0.2);
+        position: relative;
+        width: 9rem;
+        height: 9rem;
+        display: block; }
+      .people-section .people .person .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 0 1rem;
+        height: 100%; }
+        .people-section .people .person .info .person-detail {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          text-align: left; }
+        .people-section .people .person .info h3 {
+          font-weight: normal;
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+          letter-spacing: 0.5px;
+          margin: 0 0 0.3rem 0; }
+        .people-section .people .person .info h4 {
+          margin: 0;
+          font-size: 1.12rem;
+          font-weight: normal; }
+          .people-section .people .person .info h4.office {
+            text-transform: uppercase;
+            letter-spacing: 3px; }
+
+@media (max-width: 576px) {
+  .people-section.container-full {
+    padding: 0 2rem; }
+    .people-section.container-full .people .person .info h4.office {
+      letter-spacing: 0;
+      padding-top: 0.5rem; }
+  .people-section .people {
+    width: 100%;
+    flex-direction: column; }
+    .people-section .people .person {
+      width: 100%;
+      padding: 0;
+      margin: 0 0 3rem 0;
+      align-items: flex-start; }
+      .people-section .people .person .person-img {
+        height: 5.75rem;
+        width: 5.75rem; }
+      .people-section .people .person .info {
+        margin: 0 0 0 0.8rem; }
+        .people-section .people .person .info h3 {
+          font-size: 1.5rem;
+          line-height: 1.75rem; }
+        .people-section .people .person .info h4 {
+          font-size: 0.8rem;
+          line-height: 1rem; }
+      .people-section .people .person:hover {
+        background-color: none !important; }
+      .people-section .people .person:last-child {
+        margin: 0; }
+  .people-section .buttons.inline {
+    margin: 3rem auto; } }
+
 .reveal a {
   line-height: 1.3em; }
 

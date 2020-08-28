@@ -9,7 +9,8 @@
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
-
+// For the people section
+@import "../source/people";
 
 
 // Include theme-specific fonts
@@ -48,6 +49,7 @@ body:after {
 	top: 1em;
 	left: 1em;	
 }
+
 
 // Theme template ------------------------------
 @import "../template/theme";
