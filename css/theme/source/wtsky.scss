@@ -38,6 +38,11 @@ $selectionBackgroundColor: #134674;
 	line-height: 1.3em;
 }
 
+.trip {
+	display: flex;
+	justify-content: space-between;
+}
+
 // Background generator
 @mixin bodyBackground() {
 	@include radial-gradient( rgb(19, 75, 228), #0A47ED );
