@@ -29,6 +29,7 @@
         position: relative;
         width: 9rem;
         height: 9rem;
+        max-width: 9rem;
         display: block; }
       .people-section .people .person .info {
         display: flex;
@@ -89,6 +90,10 @@
 
 .reveal a {
   line-height: 1.3em; }
+
+.trip {
+  display: flex;
+  justify-content: space-between; }
 
 body:after {
   content: url(../theme/img/WT_Logo_White_Negative_RGB.png);
