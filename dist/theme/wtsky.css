@@ -88,6 +88,9 @@
   .people-section .buttons.inline {
     margin: 3rem auto; } }
 
+.reveal p {
+  font-family: 'WT Gothic-light'; }
+
 .reveal a {
   line-height: 1.3em; }
 
@@ -106,12 +109,12 @@ body:after {
  *********************************************/
 :root {
   --background-color: #0A47ED;
-  --main-font: WT Gothic, sans-serif;
+  --main-font: WT Gothic-reg, sans-serif;
   --main-font-size: 28px;
   --main-color: white;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: WT Gothic, sans-serif;
+  --heading-font: WT Gothic-med, sans-serif;
   --heading-color: white;
   --heading-line-height: 1.2;
   --heading-letter-spacing: 0em;
@@ -140,7 +143,7 @@ body:after {
   background-color: #0A47ED; }
 
 .reveal {
-  font-family: WT Gothic, "sans-serif";
+  font-family: WT Gothic-reg, "sans-serif";
   font-size: 28px;
   font-weight: normal;
   color: white; }
@@ -171,7 +174,7 @@ body:after {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: white;
-  font-family: WT Gothic, "sans-serif";
+  font-family: WT Gothic-med, "sans-serif";
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0em;

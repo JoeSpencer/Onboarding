@@ -19,9 +19,9 @@
 @import url(fonts/WTGothic/wtgothic.css);
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: WT Gothic, 'sans-serif';
+$mainFont: WT Gothic-reg, 'sans-serif';
 $mainFontSize: 28px;
-$headingFont: WT Gothic, 'sans-serif';
+$headingFont: WT Gothic-med, 'sans-serif';
 $headingFontWeight: 400;
 $headingTextTransform: none;
 $mainColor: rgb(255, 255, 255);
@@ -32,7 +32,9 @@ $backgroundColor: #0A47ED;
 $linkColor: #ffffff;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #134674;
-
+.reveal p {
+	font-family: 'WT Gothic-light';
+}
 // Fix links so they are not cut off
 .reveal a {
 	line-height: 1.3em;

@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'WT Gothic';
+	font-family: 'WT Gothic-reg';
 	src: url('WTGothic-Regular.woff2') format('woff2'),
 		 url('WTGothic-Regular.woff') format('woff');
 
@@ -8,10 +8,19 @@
 }
 
 @font-face {
-	font-family: 'WT Gothic';
+	font-family: 'WT Gothic-med';
 	src: url('WTGothic-Medium.woff2') format('woff2'),
 		 url('WTGothic-Medium.woff') format('woff');
 
     font-weight: 400;
-    font-style: medium;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'WT Gothic-light';
+	src: url('WTGothic-Light.woff2') format('woff2'),
+		 url('WTGothic-Light.woff') format('woff');
+
+    font-weight: 400;
+    font-style: normal;
 }
