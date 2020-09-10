@@ -1,0 +1,41 @@
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.flex-item {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 1 1 2rem;
+  -ms-flex: 1 1 2rem;
+  flex: 1 1 2rem;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  padding: .8rem;
+  margin: .8rem;
+  line-height: 2rem;
+  background-color: #75B09C; }
+  .flex-item .date {
+    margin: 6px 0;
+    font-size: .8rem; }
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: block; } }

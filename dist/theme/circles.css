@@ -1,0 +1,24 @@
+.circle {
+  background: white;
+  height: 240px;
+  width: 240px;
+  margin: 16px auto;
+  border-radius: 50%;
+  border: 2px solid blue;
+  text-align: center;
+  line-height: 240px; }
+
+.sheet {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.topandbottom {
+  text-align: center;
+  padding: 1rem; }
+
+.wht {
+  color: white; }
+
+.blue {
+  color: blue; }
