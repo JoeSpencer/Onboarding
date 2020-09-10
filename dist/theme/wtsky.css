@@ -88,6 +88,73 @@
   .people-section .buttons.inline {
     margin: 3rem auto; } }
 
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.flex-item {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 1 1 2rem;
+  -ms-flex: 1 1 2rem;
+  flex: 1 1 2rem;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  padding: .8rem;
+  margin: .8rem;
+  line-height: 2rem;
+  background-color: #75B09C; }
+  .flex-item .date {
+    margin: 6px 0;
+    font-size: .8rem; }
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: block; } }
+
+.circle {
+  background: white;
+  height: 240px;
+  width: 240px;
+  margin: 16px auto;
+  border-radius: 50%;
+  border: 2px solid blue;
+  text-align: center;
+  line-height: 240px; }
+
+.sheet {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.topandbottom {
+  text-align: center;
+  padding: 1rem; }
+
+.wht {
+  color: white; }
+
+.blue {
+  color: blue; }
+
 .reveal p {
   font-family: 'WT Gothic-light'; }
 
