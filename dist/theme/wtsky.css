@@ -22,7 +22,7 @@
       display: flex;
       align-items: center;
       width: 49%;
-      margin: 0 0 1.75rem 0;
+      margin: 0;
       color: #000000; }
       .people-section .people .person .person-img {
         background-color: rgba(255, 255, 255, 0.2);
@@ -30,7 +30,8 @@
         width: 9rem;
         height: 9rem;
         max-width: 9rem;
-        display: block; }
+        display: block;
+        margin: 10px 0px; }
       .people-section .people .person .info {
         display: flex;
         flex-direction: column;
@@ -170,6 +171,80 @@ body:after {
   position: fixed;
   top: 1em;
   left: 1em; }
+
+.buttontag {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px; }
+
+.more-icons {
+  display: flex; }
+
+.more-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  background-color: #000;
+  color: #fff; }
+  .more-icon:hover {
+    color: #fff; }
+    .more-icon:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, -110%); }
+  .more-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset; }
+  .more-icon .tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-width: 220px;
+    padding: 1rem 1.8rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+    background-color: #000;
+    color: #fff; }
+    .more-icon .tooltip:after {
+      display: block;
+      position: absolute;
+      bottom: 1px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      content: "";
+      border: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: transparent;
+      transform: translate(-50%, 100%); }
+
+.eyebrow {
+  font-size: .8rem;
+  text-transform: uppercase; }
 
 /*********************************************
  * GLOBAL STYLES
