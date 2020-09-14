@@ -30,11 +30,13 @@
   align-self: auto;
   padding: .8rem;
   margin: .8rem;
-  line-height: 2rem;
-  background-color: #75B09C; }
+  line-height: 2rem; }
   .flex-item .date {
     margin: 6px 0;
     font-size: .8rem; }
+
+.grn {
+  background-color: #75B09C; }
 
 @media screen and (max-width: 600px) {
   .flex-container {

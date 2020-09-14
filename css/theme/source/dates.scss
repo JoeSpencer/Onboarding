@@ -34,12 +34,14 @@ $dateBG: #75B09C;
     padding: .8rem;
     margin: .8rem;
     line-height: 2rem;
-    background-color: $dateBG;
     .date {
         margin: 6px 0;
         font-size: .8rem;
     }
     }
+.grn {
+    background-color: $dateBG;
+}
 
 @media screen and (max-width: 600px) {
   .flex-container {
